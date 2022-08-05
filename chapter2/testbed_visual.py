@@ -3,6 +3,13 @@ import numpy as np
 import random
 
 def run():
+    
+    # Page 29, Section 2.3, The 10-armed Testbed, Introduction to Reinforcement Learning
+
+    # Compares a greedy method with two epsilon-greedy methods (epsilon= 0.01 and epsilon= 0.1),
+    # as described above, on the 10-armed testbed. All the methods formed their action-value 
+    # estimates using the sample-average technique.
+
     print('testbed_visual_git.run: steps = 1000')
     x = np.arange(1, 1001)
     with open('./data/average_reward_runs2000_steps1000_epsilon01.npy', 'rb') as f:

@@ -89,6 +89,12 @@ def runs(num_runs=1000, num_steps=100, epsilon=0):
 def run():
     setup()
     
+    # Page 29, Section 2.3, The 10-armed Testbed, Introduction to Reinforcement Learning
+
+    # Compares a greedy method with two epsilon-greedy methods (epsilon= 0.01 and epsilon= 0.1),
+    # as described above, on the 10-armed testbed. All the methods formed their action-value 
+    # estimates using the sample-average technique.
+
     print('testbed.run: epsilon = 0.1')
     init()
     average_reward, prob_a_star = runs(num_runs=2000, num_steps=1000, epsilon=0.1)
